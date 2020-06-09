@@ -101,13 +101,13 @@ Setting up a static route ensures your computer always uses the same IP address,
 
 #### Why Port Forwarding?
 
-In computing, a port is an address where an application or process lives on a computer. In Terraria's case, the developers have set the default port for the game to run on port `7777`. If your router wants to "talk" to Terraria, it knows where it lives based on the IP address of the computer Terraria is running on, and the port where it's running.
+In computing, a port is an address where an application or process lives on a computer. In Terraria's case, servers are set by default to run on port `7777`. If your router wants to "talk" to Terraria, it knows where it lives based on the IP address of the computer the Terraria server is running on, and the port where it's running.
 
-In the previous step, we set a static route for our computer, which might look like `192.168.1.100`. Now when you start Terraria, it will be on port `7777`, and your router knows the full address, which looks like `192.168.1.100:7777`.
+In the previous step, we set a static route for our computer, which might look like `192.168.1.100`. Now when you start a Terraria server on port `7777`, your router can "talk" to it at the address `192.168.1.100:7777`.
 
-This is great, but your friends still don't have access to your computer; they can't connect to that `192.168.1.100` internal IP address (unless they are actually on your wifi or ethernet). You still need to broadcast your computer and Terraria's location on it to the public.
+This is great, but your friends still don't have access to your computer; they can't connect to that `192.168.1.100:7777` internal address (unless they are actually on your wifi or ethernet). You need to tell your router to allow incoming connections to that specific IP/Port so it can direct them to the internal address where the server is running.
 
-***Port forwarding*** allows remote computers (computers on the Internet) to connect to a specific computer or service within a private local-area network. Setting a port to forward to in your router allows it to direct other computers to the application/process running on the defined port. In this case, you will forward your friend's computers to port `7777` where the Terraria server will be running.
+***Port forwarding*** allows remote computers (computers on the Internet) to connect to a specific computer or service within a private local-area network. Setting a port to forward to in your router allows it to direct other computers to the application/process running on the defined port. Continuing the example, once port forwarding is set up, when your friend requests access to your server using your public IP and port `7777`, your router now knows to send that traffic to the internal address `192.168.1.100:7777`.
 
 <br/>
 
@@ -188,7 +188,7 @@ Now that you've created a static route and set up port forwarding, you can start
 1. Have them start Terraria through their Steam client.
 2. Select `Multiplayer`
 3. Select `Join via IP`
-4. Select player
+4. Select your character
 5. In `Enter IP Address:`, put the `Public IP Address` which you obtained in [Step 1](#step-1-gather-required-information)
 6. Click `Accept`
 7. In `Enter Server Port:`, put the port you used to start your server in [Step 4](#step-4-start-a-terraria-server)
