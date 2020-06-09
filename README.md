@@ -14,7 +14,7 @@ This guide will walk you through setting up a dedicated Terraria server that can
 - [Step 1: Gather Required Information](#step-1-gather-required-information)
 - [Step 2: Static Routes](#step-2-static-routes)
     - [Why Static Routes?](#why-static-routes)
-    - [How To: Static Route](#how-to-static-routes)
+    - [How To: Static Routes](#how-to-static-routes)
 - [Step 3: Port Forwarding](#step-3-port-forwarding)
     - [Why Port Forwarding?](#why-port-forwarding)
     - [How To: Port Forwarding](#how-to-port-forwarding)
@@ -99,7 +99,7 @@ Setting up a static route ensures your computer always uses the same IP address,
 
 ### Step 3: Port Forwarding
 
-#### Why Port Forwarding
+#### Why Port Forwarding?
 
 In computing, a port is an address where an application or process lives on a computer. In Terraria's case, the developers have set the default port for the game to run on port `7777`. If your router wants to "talk" to Terraria, it knows where it lives based on the IP address of the computer Terraria is running on, and the port where it's running.
 
