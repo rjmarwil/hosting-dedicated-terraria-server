@@ -11,15 +11,15 @@ This guide will walk you through setting up a dedicated Terraria server that can
 ### Table of contents
 
 - [Specs](#specs)
-- [Step 1: Gather Required Information](#gather-required-information)
-- [Step 2: Static Routes](#static-routes)
-    - [Why](#static-routes-why)
-    - [How](#static-routes-how)
-- [Step 3: Port Forwarding](#port-forwarding)
-    - [Why](#port-forwarding-why)
-    - [How](#port-forwarding-how)
-- [Step 4: Start A Terraria Server](#start-a-terraria-server)
-- [Step 5: Share With Your Friends](#share-with-your-friends)
+- [Step 1: Gather Required Information](#step-1\:-gather-required-information)
+- [Step 2: Static Routes](#step-2\:-static-routes)
+    - [Why](#why-static-routes)
+    - [How](#how-static-routes)
+- [Step 3: Port Forwarding](#step-3\:-port-forwarding)
+    - [Why](#why-port-forwarding)
+    - [How](#how-port-forwarding)
+- [Step 4: Start A Terraria Server](#step-4\:start-a-terraria-server)
+- [Step 5: Share With Your Friends](#step-5\:-share-with-your-friends)
 
 ---
 
