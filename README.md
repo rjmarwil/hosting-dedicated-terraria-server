@@ -2,28 +2,28 @@
 
 # Hosting a dedicated Terraria server with static routing and port forwarding
 
-#### Overview
+### Overview
 
 This guide will walk you through setting up a dedicated Terraria server that can be connected to by other people. This will be achieved by setting a static IP for your router, forwarding a few ports, and using Terraria's server setup wizard.
 
 > **NOTE**: The instructions and screenshots in this readme are specific to the software/hardware listed in [specs](#specs). Different routers/operating systems will have different interfaces and terminology. However, the concepts herein apply universally, and can be translated to fit your set up.
 
-#### Table of contents
+### Table of contents
 
 - [Specs](#specs)
-- [Step 1: Gather Required Information](#step-1:-gather-required-information)
-- [Step 2: Static Routes](#step-2:-static-routes)
-    - [Why](#why)
-    - [How](#how)
-- [Step 3: Port Forwarding](#step-3:-port-forwarding)
-    - [Why](#why)
-    - [How](#how)
-- [Step 4: Start A Terraria Server](#step-4:-start-a-terraria-server)
-- [Step 5: Share With Your Friends](#step-5:-share-with-your-friends)
+- [Step 1: Gather Required Information](#gather-required-information)
+- [Step 2: Static Routes](#static-routes)
+    - [Why](#static-routes-why)
+    - [How](#static-routes-how)
+- [Step 3: Port Forwarding](#port-forwarding)
+    - [Why](#port-forwarding-why)
+    - [How](#port-forwarding-how)
+- [Step 4: Start A Terraria Server](#start-a-terraria-server)
+- [Step 5: Share With Your Friends](#share-with-your-friends)
 
 ---
 
-#### Specs
+### Specs
 * **Operating System**: Windows 10 (64 bit)
 * **Router**: Netgear R6120 Nighthawk
 * **Steam Client Package Version**: `1591251555` (Built: Jun 3, 2020)
@@ -31,7 +31,7 @@ This guide will walk you through setting up a dedicated Terraria server that can
 
 ---
 
-#### Step 1: Gather Required Information
+### Step 1: Gather Required Information
 
 In order to set up a static route and port forward, you will need four key items
 - IPv4 Address
@@ -65,15 +65,15 @@ In order to set up a static route and port forward, you will need four key items
 
 ---
 
-#### Step 2: Static Routes
+### Step 2: Static Routes
 
-###### Why
+##### Why
 
 In general, your computer is set by default to use dynamic routing. This means that when you boot up your computer, your router will assign it an available IP to identify it in the local network. Each time you start your computer, it will be assigned a ***new*** IP. While this is useful, it makes it difficult for friends to connect to your server if the IP they need to connect to keeps changing.
 
-Setting up a static route ensures your computer always uses the same IP address, meaning your friends can always connect to your server with the same IP each time **(be aware of the dangers of sharing a public IP address, especially one that is static!)**.
+Setting up a static route ensures your computer always uses the same IP address, meaning your friends can always connect to your server with the same IP each time **(be aware of the dangers of sharing a public IP address!)**.
 
-###### How
+##### How
 
 1. Open up your router's UI by opening up a browser and entering the `Default Gateway` number you obtained in [Step 1](#step-1:-gather-required-information) into the address bar (Commonly, the default gateway will be `192.168.1.1`, but your router IP may vary and can be found written on the router).
     - You will most likely be asked to enter a username and password. If unsure what that is, it can usually be found written on the router itself.
@@ -97,9 +97,9 @@ Setting up a static route ensures your computer always uses the same IP address,
 
 ---
 
-#### Step 3: Port Forwarding
+### Step 3: Port Forwarding
 
-##### Why
+#### Why
 
 In computing, a port is an address where an application or process lives on a computer. In Terraria's case, the developers have set the default port for the game to run on port `7777`. If your router wants to "talk" to Terraria, it knows where it lives based on the IP address of the computer Terraria is running on, and the port where it's running.
 
@@ -111,7 +111,7 @@ This is great, but your friends still don't have access to your computer; they c
 
 <br/>
 
-##### How
+#### How
 
 1. In your router's UI (see [here]() for router connection instructions), click the `Advanced` tab, select `Advanced Setup` in the left navigation, select `Port Forwarding / Port Triggering`, and click the `Add Custom Service` button.
 
@@ -133,7 +133,7 @@ This is great, but your friends still don't have access to your computer; they c
 
 ---
 
-#### Step 4: Start A Terraria Server
+### Step 4: Start A Terraria Server
 
 Now that you've created a static route and set up port forwarding, you can start up a Terraria server using Terraria's server setup wizard.
 
@@ -183,7 +183,7 @@ Now that you've created a static route and set up port forwarding, you can start
 
 ---
 
-#### Step 5: Share With Your Friends
+### Step 5: Share With Your Friends
 
 1. Have them start Terraria through their Steam client.
 2. Select `Multiplayer`
