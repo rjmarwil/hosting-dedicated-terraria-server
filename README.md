@@ -75,7 +75,7 @@ Setting up a static route ensures your computer always uses the same IP address,
 
 ##### How To: Static Routes
 
-1. Open up your router's UI by opening up a browser and entering the `Default Gateway` number you obtained in [Step 1](#step-1-gather-required-information) into the address bar (Commonly, the default gateway will be `192.168.1.1`, but your router IP may vary and can be found written on the router).
+1. Open your router's UI by opening up a browser and entering the `Default Gateway` you obtained in [Step 1](#step-1-gather-required-information) into the address bar (Commonly, the default gateway will be `192.168.1.1`, but your router IP may vary and can be found written on the router).
     - You will most likely be asked to enter a username and password. If unsure what that is, it can usually be found written on the router itself.
 
     ![Netgear R6120 Home Screen](/images/netgear_r6120_router_home_screen.PNG)
@@ -107,7 +107,7 @@ In the previous step, we set a static route for our computer, which might look l
 
 This is great, but your friends still don't have access to your computer; they can't connect to that `192.168.1.100` internal IP address (unless they are actually on your wifi or ethernet). You still need to broadcast your computer and Terraria's location on it to the public.
 
-***Port forwarding*** allows remote computers (computers on the Internet [your friends]) to connect to a specific computer or service within a private local-area network. Setting a port to forward to in your router allows it to direct other computers to the application/process running on the defined port. In this case, you will forward your friend's computers to port `7777` where the Terraria server will be running.
+***Port forwarding*** allows remote computers (computers on the Internet) to connect to a specific computer or service within a private local-area network. Setting a port to forward to in your router allows it to direct other computers to the application/process running on the defined port. In this case, you will forward your friend's computers to port `7777` where the Terraria server will be running.
 
 <br/>
 
